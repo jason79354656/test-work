@@ -1,0 +1,135 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/**********common***********/
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+ul.inline
+{
+    overflow: hidden;
+}
+ul.inline li
+{
+    float: left;
+}
+.center
+{
+    text-align: center;
+}
+.hidden
+{
+    display: none;
+}
+h1,h2,h3,h4
+{
+    padding: 8px 0;
+}
+p
+{
+    padding: 5px 0;
+}
+strong
+{
+    font-weight: bold;
+}
+.overflow
+{
+    overflow: hidden;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label{
+    margin: 2px 2px;
+    padding: 2px 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a,p,span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: regular;
+}
+
+
+input{
+    border: 0;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 2px 4px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    background-color: #F0EFEF;
+}
+
+textarea:focus, input:focus, input[type]:focus {
+    border-color: rgb(255, 144, 0);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075)
+    inset, 0 0 8px rgba(255,144,0,0.6);
+    outline: 0 none;
+}
+
+
+button{
+    border: none;
+    margin: 2px 2px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: var(--secundary);
+    color: #ffffff;
+}
+
+:root{
+    --primary: #000000;
+    --secundary: #FDAC1F;
+}

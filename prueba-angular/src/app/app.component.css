@@ -1,0 +1,179 @@
+.main-container{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container-section-login{
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.login-header
+{
+  width: 60%;
+  margin: 0% 20%;
+}
+
+
+.text-header-login{
+    width: 100%;
+    padding: 5px 0px ;
+    margin: 5px 0px;
+}
+
+
+.login-form{
+    height: 70%;
+    width: 60%;
+    padding: 30px 0px ;
+    margin: 0% 20%;
+}
+
+
+.input-login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0px;
+    padding: px 0px;
+}
+
+.input-login-form label{
+    margin: 2px 0px ;
+}
+
+
+.btn-register{
+    margin-top: 15px;
+}
+
+.btn-register:hover{
+    margin-top: 15px;
+    border: none;
+    height: 30px;
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+
+.input-eyes{
+   position: absolute;
+   right: 15px; 
+   transform: translate(0,-50%);
+    top: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+
+.input-password{
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-section-banner{
+    width: 55%;
+    height: 100%;
+    color: rgb(0, 0, 0); 
+    background-image: url('../assets/imgs/background-img.png');
+    background-size: 100%; 
+    background-size: cover;
+}
+
+
+.menu-banner{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #ffffff !important;
+}
+
+.menu-banner li{
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.menu-banner li a{
+  position: relative;
+  cursor: pointer;
+}
+
+
+.menu-banner li a::after{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-banner li a:hover::after{
+    content: "";
+    background: linear-gradient(#FDAC1F, #fcb02c);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 15px;
+    top: calc(100% + 4px);
+    opacity: 1;
+}
+
+.menu-banner li a:hover{
+    color: #ffffff;
+}
+
+
+
+.mensage-banner{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-msg
+{
+  width: 80%;
+  color: #ffffff;
+}
+
+
+.block-submessage{
+    width: 80%;
+    margin-top: 30px;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.block{
+    width: 50%;
+
+}
+.container-submesager{
+    width: 50%;
+    color: rgb(255, 255, 255);
+}

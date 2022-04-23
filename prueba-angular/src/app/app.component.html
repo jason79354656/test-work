@@ -1,0 +1,80 @@
+<main class="main-container">
+  <section [ngStyle]="{ 'width': !(isHandset$ | async)? '45%' : '100%' }"  class="container-section-login ">
+    <div class="section-login"> 
+      <div class="login-header">
+        <app-logo [withLogo]="withLogo"></app-logo>
+         <h3 class="text-header-login">
+            Registrame con mi cuenta 
+            de Amazon
+         </h3>
+      </div>
+      <form [formGroup]="registerForm"  class="login-form" (ngSubmit)="register()">
+            <fieldset class="input-login-form">
+              <label>Frist Name</label>
+              <input formControlName="name" name='frist-name' type='text' tabindex='1'>
+            </fieldset>
+
+            <fieldset class="input-login-form">
+              <label >Gmail</label>
+              <input formControlName="email" name='gmail' type='text' tabindex='1'>
+              
+            </fieldset>
+
+            <fieldset class="input-login-form" >
+              <label>Password</label>
+              <div class="input-password">
+                <input formControlName="password"  maxlength="10" #password style="width: 97%;" name='password' type='password' tabindex='1'>
+                <span class="input-eyes" style="cursor: pointer;" >
+                  <fa-icon *ngIf="!visblePasswor" (click)="changeIcon()"   [icon]="faEyeSlash"></fa-icon>
+                  <fa-icon *ngIf="visblePasswor"  (click)="changeIconOpen()" [icon]="faEye"></fa-icon>
+                </span> 
+
+              </div>
+            </fieldset>
+
+            <fieldset class="input-login-form">
+              <button [disabled]="!registerForm.valid" class="btn-register" type="button" name="button">Registrase</button>
+            </fieldset> 
+
+            <fieldset class="input-login-form check">
+              <input type="checkbox" id="cbox1" value="first_checkbox">
+               <span>recordar contraseña</span>
+              <a>dddddddddd</a>
+            </fieldset> 
+
+      </form>
+    </div>
+  </section>
+  <section *ngIf="(isHandset$ | async) == false"  class="container-section-banner">
+      <ul class="menu-banner">
+           <li>
+              <a>Registrase</a>
+           </li>
+
+           <li>
+            <a>Busca nuevo libro</a>
+         </li>
+      </ul>
+      <div class="mensage-banner">     
+         <h2 class="container-msg">
+           Registrate y Obten un audiolibro
+           gratis 
+         </h2>
+         <div class="block-submessage">
+          <span class="block"></span>
+          <div class="container-submesager">
+            <h3>
+               Escuchar los audio libros favoritos,
+               es mas facil de que nunca
+ 
+            </h3>
+            <p> 
+              Loren Ipsum lorem lpsum Loren LOrem Impsum
+              lorem ipsum lorem ipsum lorem ipsum 
+              lorem ipsum lorem ipsum lorem ipsum 
+            </p>
+          </div>
+         </div>
+         </div>
+  </section>
+</main>
